@@ -207,7 +207,7 @@ st.markdown("<hr />", unsafe_allow_html=True)
 # =============================================================================
 # ============================== RANDOM DECK ==================================
 
-option = st.selectbox('Choise the deck :', df_rank_count['deck_name'].unique())
+option = st.selectbox('Choose the deck :', df_rank_count['deck_name'].unique())
 deck_choice = df_rank[df_rank['deck_name'] == option]
 
 decks_df = {}
