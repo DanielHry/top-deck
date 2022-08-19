@@ -111,7 +111,7 @@ for year in range(start_time, end_time +1):
 fig = px.bar(df_mix, x='year', y='count', color='format')
 fig.update_layout(
     height=900,
-    title='Number of copetitions per year :',
+    title='Number of competitions per year :',
     yaxis=dict(
         title='Count competitions',
         titlefont_size=16,
