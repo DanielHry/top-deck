@@ -17,7 +17,7 @@ def count_df(df: pd.DataFrame, col: str, norm: bool = False, limit: tuple = None
         df = df[limit[0]: limit[1]]
     return df.reset_index().rename(columns={'index': col, col:'count'})
 
-DATA = load_data()
+
 
 # =============================================================================
 # =============================== PAGE SETTING ================================
@@ -31,7 +31,7 @@ mtgcards = 'https://cdn3.emoji.gg/emojis/4620-cardboardcrack.png'
 icone = random.choice([mtgred, mtgblack, mgtblue, mtggreen, mtgwhite, mtgcards])
 st.set_page_config(page_title='MTG TopDeck', layout='wide', page_icon=icone)
 
-
+DATA = load_data()
 
 # =============================================================================
 # ================================== SIDEBAR ==================================
