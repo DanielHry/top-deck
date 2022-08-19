@@ -1,3 +1,3 @@
-from .data import DATA_ALL_DECKS
+from .data import load_data
 
-__all__ = ['DATA_ALL_DECKS']
+__all__ = ['load_data']

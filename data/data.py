@@ -1,6 +1,9 @@
 import os
 import pandas as pd
-
+import streamlit as st
 
 DIR = os.path.dirname(__file__)
-DATA_ALL_DECKS = pd.read_csv(DIR + "/data_decs.csv")
+
+@st.cache
+def load_data():
+    return pd.read_csv(DIR + "/data_decs.csv")

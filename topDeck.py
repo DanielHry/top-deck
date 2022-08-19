@@ -4,7 +4,7 @@ import streamlit as st
 import pandas as pd
 import random
 
-from data import DATA_ALL_DECKS as DATA
+from data import load_data
 
 import plotly.express as px
 
@@ -17,6 +17,7 @@ def count_df(df: pd.DataFrame, col: str, norm: bool = False, limit: tuple = None
         df = df[limit[0]: limit[1]]
     return df.reset_index().rename(columns={'index': col, col:'count'})
 
+DATA = load_data()
 
 # =============================================================================
 # =============================== PAGE SETTING ================================
