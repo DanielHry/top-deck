@@ -1,2 +1,2 @@
-# top-deck
-magic the gathering tournament deck database analysis
+# Top-Deck
+Magic the Gathering tournament deck database analysis.
